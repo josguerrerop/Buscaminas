@@ -3,7 +3,7 @@ package org.itiud.buscaminas.logica;
 public class Celda {
     private boolean estado;
     private String value;
-
+    public static final String WHITE = "-";
 
     public Celda(boolean estado, String value){
         this.estado= estado;
@@ -12,7 +12,7 @@ public class Celda {
 
     Celda(){
         this.estado= true;
-        this.value="";
+        this.value=WHITE;
     }
 
     public void setEstado(boolean estado) {

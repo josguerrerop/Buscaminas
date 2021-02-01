@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         width =size.x;
         height=size.y;
         this.buton.setX(width/2-78);
-        this.buton.setY(height-200);
+        this.buton.setY(height-247);
         this.buton.setBackgroundColor(Color.BLACK);
         this.buton.setTextColor(Color.WHITE);
         playing();
