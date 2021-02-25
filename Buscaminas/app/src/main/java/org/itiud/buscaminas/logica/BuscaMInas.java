@@ -2,7 +2,6 @@ package org.itiud.buscaminas.logica;
 
 public class BuscaMInas {
     protected static final String MINE = "\uD83D\uDCA3";
-    public static final String WHITE = "-";
     public static final String WAIT = " ";
     private static final int num = 10;
     private boolean end;
@@ -13,7 +12,7 @@ public class BuscaMInas {
     public void fill() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                celda = new Celda(true, WHITE);
+                celda = new Celda();
                 matrix[i][j] = celda;
             }
         }
@@ -21,6 +20,7 @@ public class BuscaMInas {
     public boolean isEnd() {
         return end;
     }
+
     public Celda[][] play(int x, int y) {
             if (start) {
                 eval(x, y);
